@@ -3,17 +3,13 @@ pdfplumber==0.11.6
 PyMuPDF==1.25.5
 PyPDF2==3.0.1
 
-# Google Gemini AI
-google-generativeai==0.8.5
-
 # Report Generation
 fpdf2==2.8.3
-Pillow==11.2.1
+Pillow==10.3.0
 
 # Web App
 streamlit==1.45.0
 
 # Environment
 python-dotenv==1.0.1
-Pillow==10.3.0
 groq>=0.5.0
