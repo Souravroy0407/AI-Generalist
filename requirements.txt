@@ -1,15 +1,15 @@
 # PDF Processing
-pdfplumber==0.11.6
-PyMuPDF==1.25.5
-PyPDF2==3.0.1
+pdfplumber>=0.11.0
+PyMuPDF>=1.24.0
+PyPDF2>=3.0.0
 
 # Report Generation
-fpdf2==2.8.3
-Pillow==10.3.0
+fpdf2>=2.8.0
+Pillow>=10.0.0
 
 # Web App
-streamlit==1.45.0
+streamlit>=1.40.0
 
 # Environment
-python-dotenv==1.0.1
+python-dotenv>=1.0.0
 groq>=0.5.0
