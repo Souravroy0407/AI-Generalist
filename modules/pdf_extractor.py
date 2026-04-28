@@ -79,7 +79,7 @@ def extract_images(pdf_path, output_dir=None):
                 continue
 
             # skip tiny stuff — icons, bullets, decorations, small logos
-            if width < 200 or height < 200:
+            if width < 300 or height < 300:
                 continue
                 
             # skip logos/headers which usually have extreme aspect ratios
