@@ -2,7 +2,7 @@ import re
 import os
 
 
-def parse_inspection_report(pages_data):
+def parse_inspection_report(pages_data): 
     # parse the raw text from pdf_extractor into structured dicts
     result = {
         "site_details": {},

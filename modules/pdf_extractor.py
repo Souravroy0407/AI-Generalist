@@ -7,8 +7,6 @@ from PyPDF2 import PdfReader
 
 
 def extract_text(pdf_path):
-    # Pull all text from a PDF, page by page.
-    # Tries pdfplumber first, falls back to PyPDF2 if a page comes up empty.
     pages = []
     fallback_reader = None
 
@@ -17,9 +15,6 @@ def extract_text(pdf_path):
             for i, page in enumerate(pdf.pages):
                 text = page.extract_text() or ""
                 tables = page.extract_tables() or []
-
-                # pdfplumber sometimes chokes on weird encodings,
-                # so if we got nothing, try PyPDF2 as a backup
                 if not text.strip():
                     if fallback_reader is None:
                         try:
@@ -43,8 +38,7 @@ def extract_text(pdf_path):
 
 
 def extract_images(pdf_path, output_dir=None):
-    # Rip out embedded images from a PDF using PyMuPDF.
-    # Deduplicates by content hash so we don't get 5000 copies of the same thing.
+
     if output_dir is None:
         output_dir = tempfile.mkdtemp(prefix="ddr_images_")
     os.makedirs(output_dir, exist_ok=True)
