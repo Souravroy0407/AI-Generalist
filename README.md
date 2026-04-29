@@ -89,8 +89,6 @@ Upload PDFs → Extract Text & Images → Parse Structured Data
 - Uses simple, client-friendly language
 - Generalizes to work on similar inspection reports
 
-## 📹 Demo Video
-[Loom Video Link — Coming Soon]
 
 ## 👤 Author
-[Your Name]
+Sourav Roy
